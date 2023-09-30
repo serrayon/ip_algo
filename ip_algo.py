@@ -18,6 +18,12 @@ ip_addresses = ip_addresses.split()
 # loop through 'ip_addresses' 
 for element in ip_addresses:
   
+  # Build conditional statement
+  # If current element is in 'remove list'
+  if element in remove_list:
+
+    # Then current element shoudl be removed from 'ip_addresses'
+    ip_addresses.remove(element)
   # Display 'element' in every iteration
   print(element)
 
