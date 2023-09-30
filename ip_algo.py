@@ -6,10 +6,15 @@ import_file = "allow_list.txt"
 
 remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
 
-# Display `import_file`
+# Build `with` statement to read in the initial contents of the file
 
-print(import_file)
+with open(import_file, "r") as file:
 
-# Display `remove_list`
+  # Use `.read()` to read the imported file and store it in a variable named `ip_addresses`
 
-print(remove_list)
+  ip_addresses = file.read()
+
+# Display `ip_addresses`
+
+
+print(ip_addresses)
