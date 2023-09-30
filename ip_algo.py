@@ -13,5 +13,13 @@ with open(import_file, "r") as file:
 # Use '.split()' to convert 'ip_addressses' from a string to a list
 ip_addresses = ip_addresses.split()
 
+# Build iterative statement
+# name loop variable 'element'
+# loop through 'ip_addresses' 
+for element in ip_addresses:
+  
+  # Display 'element' in every iteration
+  print(element)
+
 # Display `ip_addresses`
 print(ip_addresses)
