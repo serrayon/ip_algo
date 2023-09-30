@@ -31,8 +31,21 @@ ip_addresses = " ".join(ip_addresses)
 # Build 'with' statement to rewrite the original file
 with open(import_file, "w") as file:
   
+  # Rewrite the file, replacing its contents with 'ip_addresses'
+  file.write(ip_addresses)
+
+# Build 'with statement to read in the updated file
+with open(import_file, "r") as file:
+  
+  # Read in the updated file and store the contents in 'text'
+    text = file.read()
+
+# Display the contents of 'text'
+print(text)
+
+  
   # Display 'element' in every iteration
-  print(element)
+#print(element)
 
 # Display `ip_addresses`
-print(ip_addresses)
+#print(ip_addresses)
