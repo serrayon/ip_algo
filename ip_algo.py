@@ -24,6 +24,13 @@ for element in ip_addresses:
 
     # Then current element shoudl be removed from 'ip_addresses'
     ip_addresses.remove(element)
+
+# Convert 'ip_addresses' back to a string so that it can be written into the text file
+ip_addresses = " ".join(ip_addresses)
+
+# Build 'with' statement to rewrite the original file
+with open(import_file, "w") as file:
+  
   # Display 'element' in every iteration
   print(element)
 
