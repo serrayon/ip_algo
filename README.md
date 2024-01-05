@@ -1,4 +1,5 @@
 Algorithm for file updates in Python
+
 Project description
 We validate network access by ensuring that only approved IP addresses are permitted. The process begins with importing a file and accessing its data. Subsequently, we convert the data into a list, facilitating efficient filtering. Unapproved IP addresses are then removed from the list. Finally, we revert the data to its original form, completing the verification of the updated list.
 
